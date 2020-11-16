@@ -1,0 +1,30 @@
+.navbar {
+  margin: 0;
+}
+
+.navbar-menu {
+  padding: 0;
+}
+.navbar-menu ul {
+  text-transform: uppercase;
+}
+.navbar-menu ul ul li a {
+  padding: 14px;
+}
+.navbar-menu .mymenu1 .sub-menu li:hover > a {
+  color: #212121 !important;
+  background: #f5f5f5;
+}
+
+.navbar-menu-link {
+  padding: 14px 0 14px 0;
+}
+
+body .cart-contents {
+  display: flex !important;
+  padding-left: 1.5rem;
+}
+body .cart-contents:before {
+  font-size: 1.5rem;
+  margin-top: 13px;
+}

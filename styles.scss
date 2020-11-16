@@ -1,0 +1,46 @@
+
+//// ESTILOS AÑADIDOS
+//// MENÚ
+
+$menu-submenu-item--hover: #212121;
+$menu-submenu-item-background--hover: #f5f5f5;
+
+.navbar{
+	margin:0;
+}
+.navbar-menu{
+	padding:0;
+    ul{
+        text-transform:uppercase;
+        ul li a{
+            padding:14px;
+        }
+    }
+    .mymenu1 .sub-menu li:hover > a {
+       color: $menu-submenu-item--hover !important;
+       background: $menu-submenu-item-background--hover;
+    }
+}
+.navbar-menu-link{
+	padding:14px 0 14px 0
+}
+
+
+body {
+    .cart-contents{
+        display: flex !important;
+        padding-left: 1.5rem;
+        &:before{
+            font-size: 1.5rem;
+            margin-top: 13px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
