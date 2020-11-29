@@ -2,11 +2,21 @@
 //// ESTILOS AÑADIDOS
 //// MENÚ
 
+// NAV
+
 $menu-submenu-item--hover: #212121;
 $menu-submenu-item-background--hover: #f5f5f5;
 
 .navbar{
-	margin:0;
+    margin:0;
+    .cart-contents{
+        display: flex !important;
+        padding-left: 1.5rem;
+        &:before{
+            font-size: 1.5rem;
+            margin-top: 13px;
+        }
+    }
 }
 .navbar-menu{
     padding:0;
@@ -33,30 +43,27 @@ $menu-submenu-item-background--hover: #f5f5f5;
     padding: 1rem;
 }
 
+
+
+
+
+
+// FIN NAV
+
+
+
+
 #tgtext-1{
     display: none;
 }
 
-
-body {
-    .cart-contents{
-        display: flex !important;
-        padding-left: 1.5rem;
-        &:before{
-            font-size: 1.5rem;
-            margin-top: 13px;
-        }
-    }
-}
-
-
-
 #page{
-    width: 90%;
+    width: 95%;
     max-width: 1400px;
-    margin: 0 auto;
+    margin: 0 auto !important;
     font-family: 'Libre Franklin','Helvetica Neue', helvetica, arial, sans-serif;;
 }
+
 
 
 .kb-container{
@@ -65,15 +72,17 @@ body {
     
 }
 .kb-bloq{
-    text-align: center;
-    background: black;
-    padding: 0 1.5rem;
-    margin: -3rem 0 1rem 0;
-    font-size: 2rem;
-    border-radius: 10px;
-    color: white;
-    line-height: 1.2;
-    transform: skewY(-2deg);
+    &--black-friday{
+        text-align: center;
+        padding: 0 1.5rem;
+        background: black;
+        margin: -3rem 0 1rem 0;
+        font-size: 2rem;
+        border-radius: 10px;
+        color: white;
+        line-height: 1.2;
+        transform: skewY(-2deg);
+    }
 }
 
 
