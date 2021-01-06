@@ -1,0 +1,147 @@
+$producto : ".woocommerce ul.products li.product,.woocommerce-page ul.products li.product";
+
+
+/*
+Theme Name: Hello Fashion  Hijo
+Theme URI: http://karibamoda.es
+Version: 4.0
+Description: Tema hijo de Hello Fashion 
+Author: Tu
+Author URI: http://karibamoda.es
+Template: vilva
+*/
+ 
+/*----------------- Cambios a partir de aquí -------------------------------*/
+
+
+
+$go-to-prod-bck-color: #111;
+$go-to-prod-bck-color-hover: rgb(110, 110, 110);
+
+
+
+.wp-block-button__link{
+    padding: 0;
+}
+.wp-block-button.wc-block-grid__product-add-to-cart{
+    cursor: pointer;
+    background: $go-to-prod-bck-color;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px 10px;
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+    height: 44px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-150%);
+    -moz-transform: translate(-50%,-150%);
+    transform: translate(-50%,-150%);
+    -webkit-transition: ease .2s;
+    -moz-transition: ease .2s;
+    transition: ease .2s;
+    opacity: 0;
+    width: calc(100% - 20px);
+    &:hover{
+        background: $go-to-prod-bck-color-hover;
+    }
+    a{
+        border-radius: none;
+        background-color: transparent;
+    }
+}
+
+.wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link{
+    padding: 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.wc-block-grid__product{
+    &:hover {
+        .wp-block-button.wc-block-grid__product-add-to-cart{
+            opacity:1;
+        }
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+.wc-block-grid__products{
+    // justify-content: space-between;
+}
+.theme-twentytwenty .wc-block-grid.has-4-columns .wc-block-grid__product,
+.wc-block-grid.has-4-columns .wc-block-grid__product{
+    // max-width: 23%;
+}
+
+
+//nombre y precion del producto
+
+
+@mixin fuentePrecio(){
+    padding: 0;
+    color: #111;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.285em;
+    margin: 0 0 8px;
+  }
+  
+.edit-post-visual-editor .editor-block-list__block .wc-block-grid__product-title,
+.editor-styles-wrapper .wc-block-grid__product-title,
+.wc-block-grid__product-title,
+.theme-twentytwenty .wc-block-grid.has-4-columns:not(.alignwide):not(.alignfull) .wc-block-grid__product,
+.theme-twentytwenty .wc-block-grid.has-5-columns.alignfull .wc-block-grid__product,
+.wc-block-grid.has-4-columns:not(.alignwide):not(.alignfull) .wc-block-grid__product,
+.wc-block-grid.has-5-columns.alignfull .wc-block-grid__product{
+    @include fuentePrecio();
+}
+.wc-block-grid__product .wc-block-grid__product-image, .wc-block-grid__product .wc-block-grid__product-title{
+    font-size: 1rem;
+}
+
+// pagina de inicio
+.page-id-1645{
+    #page{
+        background-color: #efefefa3;
+    }
+    .header-mid{
+        padding-bottom: 15px;
+    }
+    
+    .page-title{
+        display: none;
+    }
+    .ven_a_visitarnos{
+        padding: 0;
+        border-bottom: 1px dotted black;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+    .bloque-inicio{
+        margin-top: -2rem;
+        margin-bottom: 2rem;
+        font-family: var(--secondary-font);
+        font-size: 1.5rem;
+        line-height: 1.1;
+    }
+}
+
+
+// icono oferta
+.single-product .product .onsale,
+.woocommerce ul.products li.product .onsale{
+    font-size: 10px;
+    letter-spacing: -0.3px;
+}
+
+.merda_two{
+    display: flex;
+}
